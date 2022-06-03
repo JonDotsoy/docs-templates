@@ -2,7 +2,8 @@
 import path, { sep } from "path";
 import fs, { stat } from "fs/promises";
 import { fileURLToPath, pathToFileURL } from "url";
-import { ItemReference, Provider } from "./Control";
+import { Provider } from "../types/provider";
+import { ItemReference } from "../types/item-reference";
 
 const eqArr = (arr1: any[], arr2: any[]) => arr1.length === arr2.length && arr1.every((v, i) => v === arr2[i]);
 
